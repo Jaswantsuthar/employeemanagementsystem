@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Employee management System</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght@100"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <div class="create-section">
+      <div class="heading">
+        <H2>Employee Management System</H2>
+        <button class="addEmp">Add Employee</button>
+      </div>
+
+      <div class="model close-popup" id="model">
+        <div class="model-body">
+          <span class="material-symbols-outlined" id="close">close</span>
+          <h2>Enter Employee Details</h2>
+          <form id="form">
+            <input
+              type="text"
+              placeholder="enter your name"
+              name="name"
+              required
+            />
+            <input
+              type="email"
+              placeholder="enter email"
+              name="email"
+              required
+            />
+            <select name="role">
+              <option value="SDE">SDE</option>
+              <option value="SEO">SEO</option>
+              <option value="FD">FD</option>
+            </select>
+            <input type="date" name="Doj" placeholder="DOJ" />
+            <div>
+              <div>
+                <input type="radio" value="male" id="maleupdate" name="gender" />
+                <label for="maleupdate"> Male</label>
+              </div>
+              <div>
+                <input type="radio" value="female" id="femaleupdate" name="gender" />
+                <label for="femaleupdate"> female</label>
+              </div>
+              <div>
+                <input type="radio" value="other" id="otherupdate" name="gender" />
+                <label for="otherupdate"> other</label>
+              </div>
+            </div>
+            <button>submit details</button>
+          </form>
+        </div>
+      </div>
+
+      <table class="Employee-list" id="Employee-list">
+        <thead>
+            <th>Name</th>
+            <th>Email</th>
+            <th>role</th>
+            <th>Employee id</th>
+            <th>DOJ</th>
+            <th>Gender</th>
+            <th>Options</th>
+        </thead>
+        <tbody>
+           
+        </tbody>
+      </table>
+
+
+      <div class="model create-model close-popup " id="model1">
+        <div class="model-body">
+          <span class="material-symbols-outlined" id="close1">close</span>
+          <h2>Enter Employee Details</h2>
+          <form id="form1">
+            <input
+              type="text"
+              placeholder="enter your name"
+              name="name"
+              required
+            />
+            <input
+              type="email"
+              placeholder="enter email"
+              name="email"
+              required
+            />
+            <select name="role">
+              <option value="SDE">SDE</option>
+              <option value="SEO">SEO</option>
+              <option value="FD">FD</option>
+            </select>
+            <input type="date" name="Doj" placeholder="DOJ" />
+            <div>
+              <div>
+                <input type="radio" value="male" id="male" name="gender" />
+                <label for="male"> Male</label>
+              </div>
+              <div>
+                <input type="radio" value="female" id="female" name="gender" />
+                <label for="female"> female</label>
+              </div>
+              <div>
+                <input type="radio" value="other" id="other" name="gender" />
+                <label for="other"> other</label>
+              </div>
+            </div>
+            <button>submit details</button>
+          </form>
+        </div>
+      </div>
+
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
